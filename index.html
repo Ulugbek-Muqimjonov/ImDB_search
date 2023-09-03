@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <title>fetch</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="site-header__title text-center fw-bold mt-5">Movies</h1>
+        
+        <div class="form-wrap shadow w-50 m-auto mt-lg-5 p-3 mb-5">
+            <form class="js-form form-control  w-100  d-flex p-4 mb-4 align-items-center">
+                <input class="js-search-input form-control w-50 m-2" type="search" placeholder="Search...">
+                <select class="js-sellect form-sellect shadow p-2 border-1 m-3" name="movies__species" >
+                    <option class="form-option" disabled selected hidden value="">genres</option>
+                    <option class="form-option" value="series">series</option>
+                    <option class="form-option" value="movie">movies</option>
+                    <option class="form-option" value="all">all</option>
+                </select>
+                <button class="js-btn btn btn-success">search</button>
+            </form>
+            <p class="js-result form-result d-block m-0">Natija:0</p>
+        </div>
+        
+        <ul class="js-list list list-unstyled d-flex p-0 m-0 gap-3 flex-wrap justify-content-center shadow">
+            
+        </ul>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
