@@ -60,10 +60,10 @@ elForm.addEventListener("submit", (evt) => {
         return;
     }
     if (elSellectValue == "all") {
-        getMovies(`http://www.omdbapi.com/?i=tt3896198&apikey=${imDB_API_KEY}&s=${searchMovie}`);
+        getMovies(`https://www.omdbapi.com/?i=tt3896198&apikey=${imDB_API_KEY}&s=${searchMovie}`);
         return;
     }
-    getMovies(`http://www.omdbapi.com/?i=tt3896198&apikey=${imDB_API_KEY}&s=${searchMovie}&type=${elSellectValue}`)
+    getMovies(`https://www.omdbapi.com/?i=tt3896198&apikey=${imDB_API_KEY}&s=${searchMovie}&type=${elSellectValue}`)
     
     // elForminput.value = "";
     // elSellect.value = "";
